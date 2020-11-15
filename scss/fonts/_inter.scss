@@ -1,0 +1,12 @@
+/**
+ * Proxima Nova Font Family
+ * Create @font-face rules for the font family
+ */
+
+@font-face {
+	font-family: "Inter var";
+	font-weight: 100 900; /* stylelint-disable-line font-weight-notation */
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/inter/woff2/Inter-var-upright.woff2') format("woff2");
+}
