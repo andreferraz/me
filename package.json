@@ -1,26 +1,26 @@
 {
-  "name": "andreferraz",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "@zeit/next-sass": "^1.0.1",
-    "bootstrap": "^4.5.3",
-    "next": "10.0.1",
-    "node-sass": "^4.14.1",
-    "react": "17.0.1",
-    "react-bootstrap": "^1.4.0",
-    "react-dom": "17.0.1"
-  },
-  "devDependencies": {
-    "@types/node": "^14.14.7",
-    "@types/react": "^16.9.56",
-    "prettier": "^2.1.2",
-    "prettier-eslint": "^11.0.0",
-    "typescript": "^4.0.5"
-  }
+	"name": "andreferraz",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start"
+	},
+	"dependencies": {
+		"@zeit/next-sass": "^1.0.1",
+		"bootstrap": "^4.5.3",
+		"next": "10.0.1",
+		"node-sass": "^4.14.1",
+		"react": "17.0.1",
+		"react-bootstrap": "^1.4.0",
+		"react-dom": "17.0.1"
+	},
+	"devDependencies": {
+		"@types/node": "^14.14.7",
+		"@types/react": "^16.9.56",
+		"prettier": "^2.1.2",
+		"prettier-eslint": "^11.0.0",
+		"typescript": "^4.0.5"
+	}
 }

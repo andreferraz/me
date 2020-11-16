@@ -32,38 +32,39 @@ $icons: (
 
 // Create a @font-face each font variation in the $fonts list
 @font-face {
-    font-family: $family;
-    src: url('#{$path}/#{$basename}.woff2?v#{$version}') format('woff2'),
-         url('#{$path}/#{$basename}.woff?v#{$version}') format('woff'),
-         url('#{$path}/#{$basename}.ttf?v#{$version}') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+	font-family: $family;
+	src: url('#{$path}/#{$basename}.woff2?v#{$version}') format('woff2'),
+		url('#{$path}/#{$basename}.woff?v#{$version}') format('woff'),
+		url('#{$path}/#{$basename}.ttf?v#{$version}') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-    // Use !important to prevent issues with browser extensions that change fonts */
-    font-family: $family, sans-serif !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
+[class^='icon-'],
+[class*=' icon-'] {
+	// Use !important to prevent issues with browser extensions that change fonts */
+	font-family: $family, sans-serif !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
 	line-height: 1;
 	font-display: swap;
 
-    // Better Font Rendering
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+	// Better Font Rendering
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 // Function to fix string code
 @function unicode($str) {
-    @return unquote("\"") + $str + unquote("\"");
+	@return unquote('"') + $str + unquote('"');
 }
 
 // Create a class for each icon in the $icons list
 @each $icon, $value in $icons {
-    .#{$class-prefix}#{$icon}:before {
-        content: unicode($value);
-    }
+	.#{$class-prefix}#{$icon}:before {
+		content: unicode($value);
+	}
 }
